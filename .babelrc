@@ -1,0 +1,19 @@
+{
+	"presets": ["@babel/preset-env"],
+	"plugins": [
+		["@babel/transform-runtime"],
+		[
+			"module-resolver",
+			{
+				"alias": {
+					"$common": "./src/common",
+					"$controllers": "./src/controllers",
+					"$middlewares": "./src/middlewares",
+					"$models": "./src/models",
+					"$routes": "./src/routes",
+					"$utils": "./src/utils"
+				}
+			}
+		]
+	]
+}
