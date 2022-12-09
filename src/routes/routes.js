@@ -5,7 +5,12 @@ import todoRoute from '$routes/todo'
 import cors from 'cors'
 
 const routes = app => {
-	app.use(cors())
+	const corsOptions = {
+		origin: 'https://todo-app-kappa-virid.vercel.app/',
+		credentials: true, //access-control-allow-credentials:true
+		optionSuccessStatus: 200
+	};
+	app.use(cors(corsOptions));
 	app.use('/auth', authRoute)
 	app.use('/product', productRoute)
 	app.use('/review', reviewRoute)
