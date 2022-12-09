@@ -6,7 +6,7 @@ import cors from 'cors'
 
 const routes = app => {
 	const corsOptions = {
-		origin: 'https://todo-app-kappa-virid.vercel.app/',
+		origin: 'https://todo-app-hook-amber.vercel.app',
 		credentials: true, //access-control-allow-credentials:true
 		optionSuccessStatus: 200
 	};
